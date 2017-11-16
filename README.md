@@ -6,8 +6,13 @@ Ansible role for installing the Spring Tool Suite.
 Requirements
 ------------
 
+Local
+
 * Ansible >= 2.4
-* Ubuntu
+
+Remote
+
+* Ubuntu 16.04
 
 Role Variables
 --------------
