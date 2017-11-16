@@ -1,0 +1,7 @@
+# Ansible
+*.retry
+
+# Temp files
+*~
+*.swp
+*.swo
