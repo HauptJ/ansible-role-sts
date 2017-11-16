@@ -1,6 +1,8 @@
 Ansible role: Spring Tool Suite
 =========
 
++[![Build Status](https://travis-ci.org/by-erik/ansible-role-sts.svg?branch=master)](https://travis-ci.org/by-erik/ansible-role-sts)
+
 Ansible role for installing the Spring Tool Suite.
 
 Requirements
