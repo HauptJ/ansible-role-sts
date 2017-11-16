@@ -1,0 +1,9 @@
+---
+
+- name: Download and unarchive STS
+  unarchive:
+    src: '{{ sts_url }}'
+    dest: '{{ sts_dest }}'
+    remote_src: yes
+    owner: root
+    group: root

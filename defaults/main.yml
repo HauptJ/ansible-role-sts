@@ -1,2 +1,5 @@
 ---
-# defaults file for .
+
+sts_release: "3.9.1.RELEASE"
+sts_url: http://download.springsource.com/release/STS/{{ sts_release }}/dist/e4.7/spring-tool-suite-{{ sts_release }}-e4.7.1a-linux-gtk-x86_64.tar.gz
+sts_dest: /opt

@@ -1,2 +1,29 @@
 ---
-# tasks file for .
+
+- name: Ensure dependencies are installed
+  apt:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - libwebkitgtk-3.0-0
+
+- name: Check STS version
+  stat:
+    path: '{{ sts_dest }}/sts-bundle/sts-{{ sts_release }}'
+  register: stat_result
+
+- include: install.yml
+  when: stat_result.stat.isdir is not defined
+
+- name: Create link
+  file:
+    src: '/opt/sts-bundle/sts-{{ sts_release }}/STS'
+    dest: /usr/local/bin/sts
+    state: link
+
+- name: Copy desktop file
+  template:
+    src: sts.desktop
+    dest: /usr/local/share/applications/
+    owner: root
+    group: root
