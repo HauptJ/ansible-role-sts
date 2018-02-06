@@ -1,5 +1,5 @@
 ---
 
-sts_release: "3.9.1.RELEASE"
-sts_url: http://download.springsource.com/release/STS/{{ sts_release }}/dist/e4.7/spring-tool-suite-{{ sts_release }}-e4.7.1a-linux-gtk-x86_64.tar.gz
+sts_release: "3.9.2.RELEASE"
+sts_url: http://download.springsource.com/release/STS/3.9.2.RELEASE/dist/e4.7/spring-tool-suite-3.9.2.RELEASE-e4.7.2-linux-gtk-x86_64.tar.gz
 sts_dest: /opt
