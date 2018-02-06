@@ -4,4 +4,4 @@ Exec={{ sts_dest }}/sts-bundle/sts-{{ sts_release }}/STS
 Icon={{ sts_dest }}/sts-bundle/sts-{{ sts_release }}/icon.xpm
 Type=Application
 StartupNotify=true
-Categories=Development;
+Categories=Development;IDE;
