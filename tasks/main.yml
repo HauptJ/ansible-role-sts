@@ -20,6 +20,7 @@
     src: '/opt/sts-bundle/sts-{{ sts_release }}/STS'
     dest: /usr/local/bin/sts
     state: link
+  when: not ansible_check_mode
 
 - name: Copy desktop file
   template:
